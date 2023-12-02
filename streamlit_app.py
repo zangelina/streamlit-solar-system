@@ -4,10 +4,10 @@ import os
 #define the planets pages with mass and age parameters and image
 def planetInfo(planet, mass, age, name):
     st.title(planet + " Weight and Age") #1st NEW
-    imageName = os.path.join("planetpics/" + planet.lower() + ".jpeg")
+    imageName = os.path.join(planet.lower() + ".jpeg")
     if planet == "Pluto":
         st.image(imageName, use_column_width = True)
-        st.image("planetpics/welovepluto.png")
+        st.image("welovepluto.png")
         st.caption("Some may say Pluto isn't a planet, but in our hearts, Pluto maintains its status. We should go ahead and call all the dwarf planets planets!") #2nd NEW
     else:
         st.image(imageName, use_column_width = True)
